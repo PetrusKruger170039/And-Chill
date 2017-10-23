@@ -1,0 +1,121 @@
+/*sign up button*/
+/*#sign-up{
+    width:150px;
+    margin-top:70px;
+    margin-left: 70px;
+    margin-bottom: 200px;
+    background-color: mediumaquamarine;
+    float: left;
+}*/
+body {
+    position: fixed;
+}
+
+.sign-up{
+    padding: 0px;
+    position: fixed;
+}
+.sign-up button{
+    border: none;
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'Aquagro';
+    text-align: center;
+    background-color: mediumaquamarine;
+    margin-top: 20px;
+    width: 100%;
+}
+#sign-up button:hover {
+    background-color: #339977;
+}
+
+/*header with the logo*/
+#header{
+    margin-top: 140px;
+}
+#header img {
+    margin: auto;
+    width: 100%;
+}
+
+/*inputs*/
+#inputs {
+    min-height: 300px;/*-----------------take this away in the end!*/
+    margin-top: 80px;
+}
+@media only screen and (max-width: 500px) {
+    #input {
+        margin-top: 140px;
+    }
+}/*-------fix this!!!!*/
+
+.input input {
+    width: 100%;
+    padding: 0px;
+    margin-top: 10px;
+    background-color: rgba(102,221,170,0.5);
+    border-style: none;
+    padding: 10px;
+    color: white;
+    font-family: 'Pangram-Medium';
+}
+
+.input input:focus {
+    -webkit-animation-name: typing;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: typing;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    
+    outline-style: none;
+}
+@-webkit-keyframes typing {
+    from {background-color: rgba(102,221,170,0.5);}
+    to {background-color: rgba(102,221,170,0.8);}
+}
+@keyframes typing {
+    from {background-color: rgba(102,221,170,0.5);}
+    to {background-color: rgba(102,221,170,0.8);}
+}
+
+/*login button*/
+.login {
+    background-color: rgba(0,0,0,0);
+    border-style: solid;
+    border-color: mediumaquamarine;
+    border-width: 2px;
+    margin-top: 30px;
+    font-family: 'Pangram-Medium';
+    text-align: center;
+    font-size: 25px;
+}
+.login p {
+    margin: 0px;
+}
+.login p a{
+    color: white;
+}
+.login:hover {
+    -webkit-animation-name: login-hover;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: login-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@-webkit-keyframes login-hover {
+    from {background-color: rgba(0,0,0,0,0);}
+    to {background-color: rgba(0,0,0,0.3);}
+}
+@keyframes login-hover {
+    from {background-color: rgba(0,0,0,0,0);}
+    to {background-color: rgba(102,221,170,0.3);}
+}
+.login a:hover{
+    text-decoration: none;
+}

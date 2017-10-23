@@ -1,0 +1,200 @@
+body{
+	margin: 0 auto;
+	padding: 0;
+}
+@font-face{
+    font-family:'Aquagro';
+    src: url(../fonts/aquagro.ttf);
+}
+
+@font-face{
+    font-family:'Pangram-Medium';
+    src: url(../fonts/Pangram-Medium.otf);
+}
+
+/*general styling*/
+h1 {
+    font-family: Aquagro;
+}
+
+h3 {
+    font-family: Aquagro;
+    opacity: 1;
+    color: white;
+}
+
+h4 {
+    font-family: Aquagro;
+    opacity: 1;
+    color: white;
+    font-weight: 500;
+}
+
+button {
+    color: white;
+    font-family: 'Pangram-Medium';
+}
+button:focus {
+    outline-style: none;
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Pangram-Medium';
+}
+
+/*main div*/
+#main-con{
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+}
+
+#main-con{
+    background-image: url(../img/login/login-desktop-3.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#mobile-main{
+    background-image:url(../img/login/login-mobile2.gif);
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+}
+
+/*nav bar*/
+#nav-bar{
+    height: 100px;
+    float: left;
+    position: fixed;
+    
+    /*the background with the gradient*/
+    background: black;
+    background: -webkit-linear-gradient(black, rgba(0,0,0,0));
+    background: -o-linear-gradient(black, rgba(0,0,0,0));
+    background: -moz-linear-gradient(black, rgba(0,0,0,0));
+    background: linear-gradient(black, rgba(0,0,0,0));
+}
+#nav-bar h4{
+    margin: 21px 0px 0px 0px;
+    text-align: left;
+    font-size: 20px;
+}
+.logo {
+    text-align: center;
+}
+#nav-bar img {
+    margin: 0px auto;
+    width: 120px;
+}
+/*menu*/
+
+/*animation of the three lines*/
+.ham_menu {
+    margin: 10px 0px 0px 0px;
+    cursor: pointer;
+    background-clip: inherit;
+    position: relative;
+    z-index: 2;
+}
+.ham_menu_line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+.change .bar_top {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .bar_middle {
+    opacity: 0;
+}
+.change .bar_bottom {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/*dropdown styling*/
+.dropdown {
+    /*padding: 18px 15px 18px 15px;*/
+    padding: 20vw 0vw 0vw 0vw;
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(95,158,160,0.8);
+    position: fixed;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.dropdown a {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    font-family: aquagro;
+    margin: 2vw 30vw;
+    font-weight: bold;
+}
+.dropdown a:hover {
+    -webkit-animation-name: dropdown-hover;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: dropdown-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    
+    text-decoration: none;
+}
+
+@-webkit-keyframes dropdown-hover {
+    from {background-color: rgba(0,0,0,0,0);}
+    to {background-color: rgba(0,0,0,0.3);}
+}
+@keyframes dropdown-hover {
+    from {background-color: rgba(0,0,0,0,0);}
+    to {background-color: rgba(0,0,0,0.3);}
+}
+
+/*everything about the search bar*/
+.searchbar {
+    margin-top: 10px;
+}
+.searchbardiv {
+    float: left;
+    width: 90%;
+}
+.searchicondiv {
+    float: left;
+    width: 10%;
+}
+#searchbar {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: cadetblue;
+    color: white;
+    display: inline;
+    margin: 8px 0px;
+    padding: 0px 8px;
+}
+#searchbar:focus{
+    outline-style: none;
+}
+.searchbar i {
+    display: inline;
+    font-size: 17px;
+    float: left;
+    margin: -3px 0px 0px 6px;
+    padding: 0px;
+}
