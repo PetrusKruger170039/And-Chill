@@ -2,31 +2,30 @@ body{
 	margin: 0 auto;
 	padding: 50px;
 }
-@font-face {
-    font-family: 'Pangram';
-    src: url(../fonts/pangram-regular.otf);
-}
 
 #outer-con {
-    height: 1000px;
-    width: 800px;
+    /*height: 1000px;
+    width: 800px;*/
     background-color: rgba(19,19,19,0.9);
     border-width: 5px;
     border-style: solid;
     border-color: #339987;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.poster {
-    height: 500px;
+/*.poster {
+    /*height: 500px;
     width: 200px;
     padding: 10px;
     float: left;
+}*/
+.poster img {
+    width: inherit;
 }
 
 .info {
-    width: 400px;
-    height: 350px;
-    float: right;
     margin-right: 60px;
     font-size: 16px;
 }
@@ -57,12 +56,20 @@ body{
     font-size: 20px;
 }
 
-/*.watchlist-button button:hover {
-    background-color: #191919;
-    color: #339987;
-    border-color: #ffffff;
+.download-button {
+    margin-top: 12px;
+    margin-left: 35px;
+    float: left;
+}
+
+.download-button button {
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+    border-color: #339987;
     border-style: solid;
     border-width: 2px;
+    height: 50px;
+    width: 170px;
     font-size: 20px;
 }
 
@@ -95,38 +102,9 @@ body{
     from {background-color: rgba(0,0,0,0);}
     to {background-color: rgba(102,221,170,0.3);}
 }
-.login a:hover{
-    text-decoration: none;
-}
-
-.download-button {
-    margin-top: 12px;
-    margin-left: 35px;
-    float: left;
-}
-
-.download-button button {
-    background-color: #191919;
-    color: #ffffff;
-    border-color: #339987;
-    border-style: solid;
-    border-width: 2px;
-    height: 50px;
-    width: 170px;
-    font-size: 20px;
-}
-
-/*.download-button button:hover {
-    background-color: #191919;
-    color: #339987;
-    border-color: #ffffff;
-    border-style: solid;
-    border-width: 2px;
-    font-size: 20px;
-}*/
 
 .imdb-rating {
-    margin-top: 500px;
+    margin-top: 70px;
 }
 
 h2 {
@@ -142,19 +120,12 @@ h2 {
     margin-left: 120px;
 }
 
-.description {
-    width: 700px;
-    margin-left: 50px;
-}
-
 .description p {
     font-size: 16px;
     color: #ffffff;
     margin-top: 25px;
 }
 
-.trailer {
-    margin-left: 137px;
-    margin-top: 30px;
+.trailer img {
+    width: inherit;
 }
-
