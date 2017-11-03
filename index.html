@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> And Chill</title>
+        <title>LOGIN</title>
+        <link rel="icon" href="img/logo_black.png">
+        
         <!-- project files -->
+        <!-- jquery -->
+        <script src="jquery/jquery-1.11.2/jquery.js"></script>
+        <script src="jquery/jquery-ui-1.11.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="jquery/jquery-ui-1.11.4/jquery-ui.css">
+        <!-- bootstrap -->
         <link rel="stylesheet" href="bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="jquery/1.12.0/jquery.min.js"></script>
         <script src="bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -10,7 +17,7 @@
         <!-- library files -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/index.css">
-        <script href="index.js"></script>
+        <script src="js/index.js"></script>
     </head>
     
     <body>
@@ -18,19 +25,20 @@
             <div id="mobile-main">
             
             <div class="container">
-                <div class="sign-up
-                            col-xs-3
-                            col-xs-offset-7
-                            col-sm-2
-                            col-sm-offset-1">
-                    <button>SIGN UP</button>
-                 </div> <!--sign-up button -->
-                
+                <div class="sign-up-row">
+                    <div class="sign-up
+                                col-xs-3
+                                col-xs-offset-7
+                                col-md-2
+                                col-md-offset-1">
+                        <button>SIGN UP</button>
+                     </div> 
+                    </div><!--sign-up button -->
                 <div>
                     <div id="header" class="col-xs-8
                                             col-xs-offset-2
-                                            col-sm-4
-                                            col-sm-offset-1">
+                                            col-md-4
+                                            col-md-offset-1">
                         <img alt="& CHILL" src="img/logo.svg">
                     </div>
                 <!-- header -->
@@ -38,23 +46,63 @@
                  
                 <div id="inputs" class="col-xs-10
                                         col-xs-offset-1
-                                        col-sm-6
-                                        col-sm-offset-1">
-                    <div class="input col-xs-8 col-xs-offset-2">
-                        <input id="username" type="text" placeholder="USERNAME/EMAIL">
-                        <input id="password" type="text" placeholder="PASSWORD">
-                    </div>
-                <!-- inputs -->
+                                        col-md-6
+                                        col-md-offset-1">
+                    <div class="input
+                                col-xs-8
+                                col-xs-offset-2
+                                col-md-6
+                                col-md-offset-2">
+                        <div class="username">
+                            <input id="username" type="text" placeholder="USERNAME/EMAIL">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </div>
+                        <div class="password">
+                            <input id="password" class="dots" type="text" placeholder="PASSWORD">
+                            <span class="glyphicon glyphicon-eye-close"></span>
+                        </div>
+                    </div><!-- text inputs -->
                     
                     <div class="login
                                 col-xs-6
                                 col-xs-offset-3
-                                col-sm-4
-                                col-sm-offset-3">
+                                col-md-4
+                                col-md-offset-3">
                         <p><a href="home.html">LOGIN</a></p>
+                    </div><!-- login button -->
+                    
+                    <div class="or row col-md-12"> <!-- or -->
+                        <div class="devider-line
+                                    col-xs-3
+                                    col-xs-offset-1
+                                    col-md-2
+                                    col-md-offset-2"></div>
+                        <div class="or-word col-xs-4 col-md-2"><p>OR</p></div>
+                        <div class="devider-line
+                                    col-xs-3
+                                    col-md-2"></div>
                     </div>
-                    <!-- login button -->
-                </div>
+                    
+                    <div class="facebook
+                                col-xs-4
+                                col-xs-offset-2
+                                col-md-offset-0">
+                        <button onclick="https://www.facebook.com/">
+                            <img alt="logo" src="img/login/facebook-logo.png">
+                            <p>Login with Facebook</p>
+                        </button>
+                    </div>
+                    <div class="google
+                                col-xs-4
+                                col-md-offset-2">
+                        <button onclick="https://www.google.co.za/">
+                            <img alt="logo" src="img/login/google-logo.png">
+                            <p>Login with Google+</p>
+                        </button>
+                    </div>
+                    
+                </div> <!-- all inputs and buttons (exept sign up) -->
+                
                 
                 
                 <div id="footer">

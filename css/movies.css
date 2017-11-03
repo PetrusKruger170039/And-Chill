@@ -1,16 +1,9 @@
-#main-con{
-    height: 2500px;
-    width: 100%;
-    background-color: black;
-}
-
-
-
-#slider{
-    height: 600px;
+#header{
+    height: 150px;
     background-color: cadetblue;
-    float:left;
+    float: left;
     margin-top: 100px;
+    margin-bottom: 50px;
     padding-top: -80px;
     padding-left: 100px;
     
@@ -19,68 +12,55 @@
     border-left-width: 50px;
 }
 
-#movieart{
-    height: 800px;
-    width:500px;
-    background-color: hotpink;
-    float: left;
+.accordion{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-align: center;
+}
+.aheader {
+    padding: 8px 15px;
+    width: 100%;
+    box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.aheader p{
+    font-family: 'Pangram-Medium';
+    margin: 0px;
+    font-size: 3vw;
 }
 
-#intro{
-    height: 300px;
-    width: 100%;
-    background-color: white;
-    float: left;
-}
-
-#releases{
-    height: 100px;
-    width: 100%;
+/*filternumbers determine colour of accordion header*/
+.filter1 {
     background-color: cadetblue;
-    float: left;
+}
+.filter2{
+    background-color: #558e90;
+}
+.filter3{
+    background-color: #4c7e80;
+}
+.filter4{
+    background-color: #426e70;
 }
 
-#suggestions{
-    height: 500px;
-    margin: auto;
-    background-color: blueviolt;
-    float: left;
+.acontent {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
 }
-
-#suggestions{
-    margin: auto;
+.accordion ul {
+    list-style-type: none;
+    padding: 0px;
 }
-
-#one{
-    height: 350px;
-    width: 250px;
-    background-color: red;
-    float: left;
-    margin-left:20px;
-    margin-top: 20px;
-}
-
-
-#two{
-    height: 350px;
-    width: 250px;
-    background-color: red;
-    float: left;
-    margin-left:20px;
-    margin-top: 20px;
-    overflow: auto;
-}
-
-
-#three{
-    height: 350px;
-    width: 250px;
-    background-color: red;
-    float: left;
-    margin-left:20px;
-    margin-top: 20px;
-    
-    
+.accordion ul li {
+    width: 100%;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    font-family: 'Pangram-Medium';
 }
 
 /* The Overlay (background) */

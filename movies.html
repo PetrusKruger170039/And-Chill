@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MOVIES/SERIES</title>
+        <link rel="icon" href="img/logo_black.png">
+        
+        <!-- project files -->
+        <!-- jquery -->
+        <script src="jquery/jquery-1.11.2/jquery.js"></script>
+        <script src="jquery/jquery-ui-1.11.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="jquery/jquery-ui-1.11.4/jquery-ui.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="jquery/1.12.0/jquery.min.js"></script>
+        <script src="bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <!-- library files -->
+        <link rel="stylesheet" href="css/movies.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/home.js"></script>
+        <script src="js/movies.js"></script>
+    </head>
+    
+    <body>
+        <div id="main-con">
+            <div class="container-fluid">
+                
+                <!-- navbar -->
+                <div id="nav-bar" class="row col-xs-12 navbar-fixed-top">
+                    <div class="menu">
+                        <!--the hamburger menu icon-->
+                        <div class="pull-left col-xs-2 col-md-1 ham_menu" onclick="hamMenu(this)">
+                            <div class="ham_menu_line bar_top"></div>
+                            <div class="ham_menu_line bar_middle"></div>
+                            <div class="ham_menu_line bar_bottom"></div>
+                        </div>
+                        <div class="dropmenu" id="dropmenu">
+                            <a href="#">HOME</a>
+                            <a href="#">MOVIES</a>
+                            <a href="#">SERIES</a>
+                            <a href="#">WATCHLIST</a>
+                            <a href="#">LOG OUT</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 visible-md visible-lg">
+                        <h4>SERIES</h4>
+                    </div>
+                    
+                    <div class="logo
+                                col-xs-4
+                                col-xs-offset-2
+                                col-md-2
+                                col-md-offset-1">
+                        <img alt="logo"src="img/logo_white.png">
+                    </div>
+                    
+                    <div class="row
+                                searchbar
+                                col-xs-4
+                                col-md-3
+                                col-md-offset-2">
+                        <div class="searchbardiv">
+                            <input id="searchbar" type="text" onkeyup="searchfilter()" placeholder="search" class="visible-md visible-lg">
+                        </div>
+                        <div class="searchicondiv pull-right"><h3><i class="glyphicon glyphicon-search"></i></h3></div>
+                    </div>
+                </div>
+                <!-- end of navbar -->
+                
+                <div id="header" class="col-xs-12">
+                    <div id="info">
+                    </div>
+                </div>
+                
+                <div class="content">
+                    
+                    <!-- filters-->
+                    <div class="accordion
+                                col-xs-12
+                                col-md-3">
+                        <div class="aheader filter1">
+                            <p>User ratings out of five</p>
+                        </div>
+                        <div class="acontent">
+                            <ul>
+                                <li>5</li>
+                                <li>4</li>
+                                <li>3</li>
+                                <li>2</li>
+                                <li>1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion
+                                col-xs-12
+                                col-md-3">
+                        <div class="aheader filter2">
+                            <p>IMDB ratings</p>
+                        </div>
+                        <div class="acontent">
+                            <ul>
+                                <li>10</li>
+                                <li>9</li>
+                                <li>8</li>
+                                <li>7</li>
+                                <li>6</li>
+                                <li>5</li>
+                                <li>4</li>
+                                <li>3</li>
+                                <li>2</li>
+                                <li>1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion
+                                col-xs-12
+                                col-md-3">
+                        <div class="aheader filter3">
+                            <p>Genre</p>
+                        </div>
+                        <div class="acontent">
+                            <ul>
+                                <li>Horror</li>
+                                <li>Action film</li>
+                                <li>Adventure Film</li>
+                                <li>Western</li>
+                                <li>Drama</li>
+                                <li>Animation</li>
+                                <li>Science fiction/fantacy</li>
+                                <li>Romance/Romantic comedy</li>
+                                <li>Anime</li>
+                                <li>Family</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion
+                                col-xs-12
+                                col-md-3">
+                        <div class="aheader filter4">
+                            <p>Year</p>
+                        </div>
+                        <div class="acontent">
+                            <ul>
+                                <li>2017</li>
+                                <li>2016</li>
+                                <li>2015</li>
+                                <li>2014</li>
+                                <li>2013</li>
+                                <li>2012</li>
+                                <li>2011</li>
+                                <li>2010</li>
+                                <li>before 2010</li>
+                                <li>before 2000</li>
+                                <li>before 1990</li>
+                                <li>before 1980</li>
+                                <li>before 1970</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div id="footer"></div>
+            </div>
+         
+        </div> <!-- main con -->
+        
+    
+    </body>
+</html>

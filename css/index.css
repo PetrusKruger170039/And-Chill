@@ -7,13 +7,13 @@
     background-color: mediumaquamarine;
     float: left;
 }*/
-body {
-    position: fixed;
-}
 
+.sign-up-row {
+    width: 100%;
+    float: left;
+}
 .sign-up{
     padding: 0px;
-    position: fixed;
 }
 .sign-up button{
     border: none;
@@ -25,7 +25,7 @@ body {
     margin-top: 20px;
     width: 100%;
 }
-#sign-up button:hover {
+.sign-up button:hover {
     background-color: #339977;
 }
 
@@ -40,22 +40,20 @@ body {
 
 /*inputs*/
 #inputs {
-    min-height: 300px;/*-----------------take this away in the end!*/
-    margin-top: 80px;
+    margin-top: 120px;
 }
-@media only screen and (max-width: 500px) {
-    #input {
-        margin-top: 140px;
-    }
-}/*-------fix this!!!!*/
+
+.input {
+    padding: 0px;
+}
 
 .input input {
     width: 100%;
     padding: 0px;
     margin-top: 10px;
-    background-color: rgba(102,221,170,0.5);
+    background-color: rgba(102,221,170,0.7);
     border-style: none;
-    padding: 10px;
+    padding: 3px 10px;
     color: white;
     font-family: 'Pangram-Medium';
 }
@@ -73,12 +71,53 @@ body {
     outline-style: none;
 }
 @-webkit-keyframes typing {
-    from {background-color: rgba(102,221,170,0.5);}
-    to {background-color: rgba(102,221,170,0.8);}
+    from {background-color: rgba(102,221,170,0.7);}
+    to {background-color: rgba(102,221,170,0.4);}
 }
 @keyframes typing {
-    from {background-color: rgba(102,221,170,0.5);}
-    to {background-color: rgba(102,221,170,0.8);}
+    from {background-color: rgba(102,221,170,0.7);}
+    to {background-color: rgba(102,221,170,0.4);}
+}
+
+::placeholder {
+    color: rgba(255,255,255,0.7);
+    font-family: 'Pangram-Medium';
+    letter-spacing: 0px;
+    font-weight: normal;
+}
+
+/* view/hide password */
+@font-face {
+    font-family: 'dotsfont';
+    src:url('dotsfont.eot');
+    src:url('dotsfont.eot?#iefix')  format('embedded-opentype'),
+        url('dotsfont.svg#font')    format('svg'),
+        url('dotsfont.woff')        format('woff'),
+        url('dotsfont.ttf')         format('truetype');
+}
+.dots {
+    -webkit-text-security: disc;
+    font-family: dotsfont;
+    letter-spacing: 4px;
+    font-weight: 1000;
+}
+.input .password .glyphicon {
+    color: white;
+    position: absolute;
+    float: left;
+    margin: 49px 2% 0px 90%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* remove username/email */
+.input .username .glyphicon {
+    color: white;
+    position: absolute;
+    float: right;
+    margin: 14px 2% 0px 90%;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 /*login button*/
@@ -93,6 +132,7 @@ body {
     font-size: 25px;
 }
 .login p {
+    width: 100%;
     margin: 0px;
 }
 .login p a{
@@ -118,4 +158,58 @@ body {
 }
 .login a:hover{
     text-decoration: none;
+}
+
+/* ---- 0r ----- */
+.or{
+    margin-top: 20px;
+}
+.devider-line {
+    height: 3px;
+    background-color: white;
+    margin-top: 10px;
+}
+.or-word p {
+    color: white;
+    text-align: center;
+}
+
+.facebook {
+    padding: 0px 5px;
+}
+
+.facebook button {
+    width: 100%;
+    float: right;
+    background-color: #4a7ebd;
+    border-style: none;
+    padding: 3px 5px;
+    font-size: 11px;
+}
+.facebook button:hover {
+    background-color: rgba(74,126,189,0.8);
+    border-style: none;
+}
+.facebook button img {
+    height: 25px;
+    float: left;
+}
+
+.google {
+    padding: 0px 5px;
+}
+.google button {
+    width: 100%;
+    background-color: #fd5c4f;
+    border-style: none;
+    padding: 3px 5px;
+    font-size: 11px;
+}
+.google button:hover {
+    background-color: rgba(253,92,79,0.8);
+    border-style: none;
+}
+.google button img {
+    height: 25px;
+    float: left;
 }
