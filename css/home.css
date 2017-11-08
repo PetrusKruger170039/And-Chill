@@ -1,138 +1,214 @@
 #main-con{
-    height: 2500px;
     width: 100%;
     background-color: black;
-}
-#footer{
-    height: 100px;
-    width: 100%;
-    float: right;
-    margin-top: 750px;
-    background-color: darkslategrey;
+    overflow: hidden;
 }
 
+.readmore {
+    background-color: #558E90;
+    height: 25px;
+}
+.readmore:hover {
+    background-color: rgba(85,142,144,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.watchlist {
+    background-color: #4C7F81;
+    height: 25px;
+}
+.watchlist:hover {
+    background-color: rgba(76,127,129,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.trailer {
+    background-color: #447274;
+    height: 25px;
+}
+.trailer:hover {
+    background-color: rgba(68,114,116,0.6);
+    color: rgba(255,255,255,0.6);
+}
 
 /* slider */
 .slider-wrap {
     height: 76vh;
-    background-color: cadetblue;
+    background-color: black;
     margin-top: 12vh;
+    margin-bottom: 12vh;
+    
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#movieart{
-    background-color: hotpink;
-}
-
-#intro{
-    height: 300px;
+.slide {
+    position: absolute;
+    overflow: hidden;
     width: 100%;
-    background-color: white;
+    height: 100%;
+    
+    -webkit-transition: -webkit-transform 1600ms;
+    transition: -webkit-transform 1600ms, transform 1600ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.slide-1 {
+    left: 0%;
+}
+.slide-2 {
+    left: 100%;
+}
+.slide-3 {
+    left: 200%;
+}
+.slide-4 {
+    left: 300%;
+}
+
+.slide-indicator {
+    position: absolute;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 67vh;
+    left: 0;
+}
+.slide-indicator input {
+    margin: auto;
+}
+
+.image{
+    height: 100%;
+    position: absolute;
     float: left;
+    z-index: 1;
+    margin-top: -3vh;
+}
+.image1{
+    background: rgba(0,0,0,0) url(../img/home/babydriver.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image2{
+    background: rgba(0,0,0,0) url(../img/home/bladerunner.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image3{
+    background: rgba(0,0,0,0) url(../img/home/gameofthrones.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image4{
+    background: rgba(0,0,0,0) url(../img/home/rickandmorty.png) center center no-repeat;
+    background-size: contain;
+}
+
+.coloured-bar{
+    background-color: cadetblue;
+    height: 60vh;
+    margin-top: 5vh;
+}
+.text h1 {
+    font-family: 'Pangram-Bold';
+    margin-bottom: 65px;
+}
+.text h2 {
+    color: black;
+    text-align: left;
+    margin-top: -55px;
+}
+.text p {
+    font-family: 'Pangram-Bold';
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+.button {
+    display: block;
+    float: none;
+    border-style: none;
+    margin-bottom: 5px;
+}
+
+/* Slider Slide Effect */
+.radiobutton1:checked ~ .slide {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+.radiobutton2:checked ~ .slide {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.radiobutton3:checked ~ .slide {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+}
+.radiobutton4:checked ~ .slide {
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%);
+}
+
+/* end of slider */
+
+.intro{
+    margin-bottom: 12vh;
+    margin-top: 100vh;
+    overflow: hidden;
+}
+
+.title {
+    height: 60px;
+    background-color: cadetblue;
+    margin: 0px 0px 50px 0px;
+    overflow: hidden;
 }
 
 #releases{
-    height: 100px;
+    height: 400px;
+    float: left;
+    margin-top: 30px;
+    padding: 15px;
+    background-clip: content-box;
+}
+
+.overlay-hover {
+    opacity: 0;
     width: 100%;
-    background-color: cadetblue;
-    float: left;
-}
-
-#suggestions{
-    height: 500px;
-    margin: auto;
-    background-color: blueviolt;
-    float: left;
-}
-
-#suggestions{
-    margin: auto;
-}
-
-#one{
-    height: 350px;
-    width: 250px;
-    background-color: red;
-    float: left;
-    margin-left:20px;
-    margin-top: 20px;
-}
-
-
-#two{
-    height: 350px;
-    width: 250px;
-    background-color: red;
-    float: left;
-    margin-left:20px;
-    margin-top: 20px;
-    overflow: auto;
-}
-
-
-#three{
-    height: 350px;
-    width: 250px;
-    background-color: red;
-    float: left;
-    margin-left:20px;
-    margin-top: 20px;
-    
-    
-}
-
-/* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
     height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.7);
+    padding: 50px 30px;
+}
+.overlay-hover button {
+    height: 30px;
+    margin-top: 20px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+footer {
+    background-color: cadetblue;
+    overflow: hidden;
+    height: 100px;
+    margin-top: 10vh;
+    padding-top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer img {
+    height: 60px;
+}
+
+footer a {
+    color: rgba(255,255,255,0.3);
+    display: block;
+}
+footer a:hover {
+    text-decoration: none;
+    color: white;
 }

@@ -5,8 +5,14 @@ $(function () {
       } else {
           $(this).parent(".menu").find(".dropmenu").animate({"width": "0"});
       }
-    
   });
+    
+    $(".overlay-hover").on("mouseenter", function () {
+        $(this).animate({"opacity" : "1"}, 250);
+    });
+    $(".overlay-hover").on("mouseleave", function () {
+        $(this).animate({"opacity" : "0"}, 800);
+    });
 });
 
 function hamMenu(x) {

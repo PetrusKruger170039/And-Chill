@@ -21,6 +21,16 @@ body{
 /*general styling*/
 h1 {
     font-family: Aquagro;
+    text-transform: uppercase;
+    color: black;
+}
+
+h2 {
+    font-family: Aquagro;
+    text-align: center;
+    color: white;
+    padding-bottom: 5vh;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -36,12 +46,37 @@ h4 {
     font-weight: 500;
 }
 
+p {
+    color: white;
+    font-family: 'Pangram-Medium';
+    text-align: center;
+    padding: 0px 15px;
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+}
+
 button {
     color: white;
     font-family: 'Pangram-Medium';
 }
 button:focus {
     outline-style: none;
+}
+
+footer a {
+    color: white;
+    font-family: 'Pangram-Bold';
+    cursor: pointer;
+    font-size: 12pt;
+}
+footer a:hover {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    cursor: pointer;
+}
+footer a:visited {
+    color: white;
+    text-decoration: none;
 }
 
 /*nav bar*/
