@@ -1,6 +1,7 @@
 body{
 	margin: 0 auto;
 	padding: 0;
+    font-family: 'Aquagro', 'Pangram-Medium', 'Pangram-Bold', sans-serif;
 }
 @font-face{
     font-family:'Aquagro';
@@ -10,6 +11,11 @@ body{
 @font-face{
     font-family:'Pangram-Medium';
     src: url(../fonts/Pangram-Medium.otf);
+}
+
+@font-face{
+    font-family:'Pangram-Bold';
+    src: url(../fonts/Pangram-Bold.otf);
 }
 
 /*general styling*/
@@ -36,38 +42,6 @@ button {
 }
 button:focus {
     outline-style: none;
-}
-
-/*main div*/
-#main-con{
-    height: 1000px;
-    width: 100%;
-    background-color: black;
-}
-
-#main-con{
-    background-image: url(../img/login/login-desktop-3.jpg);
-    background-repeat: no-repeat;
-    float: left;
-    top: 0; 
-    left: 0; 
-    min-width: 100%;
-    min-height: 100%;
-}
-
-#mobile-main{
-    background-image:url(../img/login/login-mobile2.gif);
-    min-width: 100%;
-    min-height: 100%;
-    background-repeat: no-repeat;
-}
-
-#footer{
-    height: 100px;
-    width: 100%;
-    float: right;
-    margin-top: 750px;
-    background-color: darkslategrey;
 }
 
 /*nav bar*/

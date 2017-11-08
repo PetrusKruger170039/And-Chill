@@ -3,27 +3,24 @@
     width: 100%;
     background-color: black;
 }
+#footer{
+    height: 100px;
+    width: 100%;
+    float: right;
+    margin-top: 750px;
+    background-color: darkslategrey;
+}
 
 
-
-#slider{
-    height: 600px;
+/* slider */
+.slider-wrap {
+    height: 76vh;
     background-color: cadetblue;
-    float:left;
-    margin-top: 100px;
-    padding-top: -80px;
-    padding-left: 100px;
-    
-    border-color: blue;
-    border-top-width: 50px;
-    border-left-width: 50px;
+    margin-top: 12vh;
 }
 
 #movieart{
-    height: 800px;
-    width:500px;
     background-color: hotpink;
-    float: left;
 }
 
 #intro{

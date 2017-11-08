@@ -1,12 +1,20 @@
-/*sign up button*/
-/*#sign-up{
-    width:150px;
-    margin-top:70px;
-    margin-left: 70px;
-    margin-bottom: 200px;
-    background-color: mediumaquamarine;
-    float: left;
-}*/
+/* background */
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.mobilebackground {
+    background: url(../img/login/login-mobile.gif);
+}
+.desktopbackground {
+    background: url(../img/login/login-desktop.jpg);
+}
+
+#main-con{
+    width: 100%;
+}
 
 .sign-up-row {
     width: 100%;
@@ -212,4 +220,29 @@
 .google button img {
     height: 25px;
     float: left;
+}
+
+/* footer */
+footer {
+    margin-top: 18vw;
+}
+
+footer a {
+    color: white;
+    font-family: 'Pangram-Bold';
+    cursor: pointer;
+    font-size: 12pt;
+}
+footer a:hover {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .password {
+    text-align: left;
+}
+
+footer .help {
+    text-align: right;
 }
