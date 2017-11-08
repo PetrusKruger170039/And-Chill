@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 #header{
     height: 150px;
     background-color: cadetblue;
@@ -28,7 +32,7 @@
 .aheader p{
     font-family: 'Pangram-Medium';
     margin: 0px;
-    font-size: 3vw;
+    font-size: 18px;
 }
 
 /*filternumbers determine colour of accordion header*/
@@ -45,10 +49,18 @@
     background-color: #426e70;
 }
 
+select {
+    border-style: none;
+}
+
 .acontent {
     height: 0px;
     overflow: hidden;
     padding: 0px;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    border-style: none;
 }
 .accordion ul {
     list-style-type: none;
@@ -63,59 +75,99 @@
     font-family: 'Pangram-Medium';
 }
 
-/* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+/* the readmore, watchlist trailer buttons*/
+.readmore {
+    background-color: #558E90;
+    min-height: 25px;
+    border-style: none;
+    margin-bottom: 5px;
+}
+.readmore:hover {
+    background-color: rgba(85,142,144,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.watchlist {
+    background-color: #4C7F81;
+    height: 25px;
+    border-style: none;
+    margin-bottom: 5px;
+}
+.watchlist:hover {
+    background-color: rgba(76,127,129,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.trailer {
+    background-color: #447274;
+    height: 25px;
+    border-style: none;
+    margin-bottom: 5px;
+}
+.trailer:hover {
+    background-color: rgba(68,114,116,0.6);
+    color: rgba(255,255,255,0.6);
+}
+
+/* the images of the movies */
+#movies{
+    height: 400px;
+    float: left;
+    margin-top: 30px;
+    padding: 15px;
+    background-clip: content-box;
+}
+.image1{
+    background: rgba(0,0,0,0) url(../img/home/babydriver.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image2{
+    background: rgba(0,0,0,0) url(../img/home/bladerunner.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image3{
+    background: rgba(0,0,0,0) url(../img/home/gameofthrones.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image4{
+    background: rgba(0,0,0,0) url(../img/home/rickandmorty.png) center center no-repeat;
+    background-size: contain;
+}
+
+/* When hovering on a specific movie */
+.overlay-hover {
+    opacity: 0;
+    width: 100%;
     height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.7);
+    padding: 50px 30px;
+}
+.overlay-hover button {
+    min-height: 40px;
+    margin-top: 20px;
+    overflow: hidden;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+footer {
+    background-color: cadetblue;
+    overflow: hidden;
+    height: 100px;
+    margin-top: 10vh;
+    padding-top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer img {
+    height: 60px;
+}
+
+footer a {
+    color: rgba(255,255,255,0.3);
+    display: block;
+}
+footer a:hover {
+    text-decoration: none;
+    color: white;
 }

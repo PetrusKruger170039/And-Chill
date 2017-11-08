@@ -4,9 +4,10 @@
     overflow: hidden;
 }
 
+/* the readmore, watchlist trailer buttons*/
 .readmore {
     background-color: #558E90;
-    height: 25px;
+    min-height: 25px;
 }
 .readmore:hover {
     background-color: rgba(85,142,144,0.6);
@@ -83,6 +84,7 @@
     margin: auto;
 }
 
+/* the images of the movies */
 .image{
     height: 100%;
     position: absolute;
@@ -175,6 +177,7 @@
     background-clip: content-box;
 }
 
+/* When hovering on a specific movie */
 .overlay-hover {
     opacity: 0;
     width: 100%;
@@ -185,8 +188,9 @@
     padding: 50px 30px;
 }
 .overlay-hover button {
-    height: 30px;
+    min-height: 40px;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 footer {
