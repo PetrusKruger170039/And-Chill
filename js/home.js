@@ -7,10 +7,10 @@ $(function () {
       }
   });
     
-    $(".overlay-hover").on("mouseenter", function () {
+    $(".overlay").on("mouseenter", function () {
         $(this).animate({"opacity" : "1"}, 250);
     });
-    $(".overlay-hover").on("mouseleave", function () {
+    $(".overlay").on("mouseleave", function () {
         $(this).animate({"opacity" : "0"}, 800);
     });
 });

@@ -84,31 +84,6 @@
     margin: auto;
 }
 
-/* the images of the movies */
-.image{
-    height: 100%;
-    position: absolute;
-    float: left;
-    z-index: 1;
-    margin-top: -3vh;
-}
-.image1{
-    background: rgba(0,0,0,0) url(../img/home/babydriver.jpg) center center no-repeat;
-    background-size: contain;
-}
-.image2{
-    background: rgba(0,0,0,0) url(../img/home/bladerunner.jpg) center center no-repeat;
-    background-size: contain;
-}
-.image3{
-    background: rgba(0,0,0,0) url(../img/home/gameofthrones.jpg) center center no-repeat;
-    background-size: contain;
-}
-.image4{
-    background: rgba(0,0,0,0) url(../img/home/rickandmorty.png) center center no-repeat;
-    background-size: contain;
-}
-
 .coloured-bar{
     background-color: cadetblue;
     height: 60vh;
@@ -158,38 +133,19 @@
 
 .intro{
     margin-bottom: 12vh;
-    margin-top: 100vh;
+    margin-top: 100px;
     overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .intro {
+        margin-top: 100vh;
+    }
 }
 
 .title {
     height: 60px;
     background-color: cadetblue;
     margin: 0px 0px 50px 0px;
-    overflow: hidden;
-}
-
-#releases{
-    height: 400px;
-    float: left;
-    margin-top: 30px;
-    padding: 15px;
-    background-clip: content-box;
-}
-
-/* When hovering on a specific movie */
-.overlay-hover {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 100;
-    background-color: rgba(0,0,0,0.7);
-    padding: 50px 30px;
-}
-.overlay-hover button {
-    min-height: 40px;
-    margin-top: 20px;
     overflow: hidden;
 }
 

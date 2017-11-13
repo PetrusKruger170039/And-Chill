@@ -1,0 +1,59 @@
+/* This file is for all the images of the movies. */
+.imagediv{
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: -3vh;
+}
+
+.image1{
+    background: rgba(0,0,0,0) url(../img/home/babydriver.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image2{
+    background: rgba(0,0,0,0) url(../img/home/bladerunner.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image3{
+    background: rgba(0,0,0,0) url(../img/home/gameofthrones.jpg) center center no-repeat;
+    background-size: contain;
+}
+.image4{
+    background: rgba(0,0,0,0) url(../img/home/rickandmorty.png) center center no-repeat;
+    background-size: contain;
+}
+
+.image {
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+#releases {
+    display: table-cell;
+    text-align: center;
+    
+    height: 400px;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+/* When hovering on a specific movie */
+.overlay {
+    opacity: 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -400px;
+    height: 400px;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.7);
+    
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.overlay button {
+    min-height: 40px;
+    margin-top: 20px;
+    overflow: hidden;
+}
