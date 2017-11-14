@@ -13,6 +13,13 @@ $(function () {
     $(".overlay").on("mouseleave", function () {
         $(this).animate({"opacity" : "0"}, 800);
     });
+    
+    $(".readmore").on("click", function () {
+        $("#indiv").animate({"margin-top" : "5%"});
+    });
+    $(".glyphicon-remove-circle").on("click", function () {
+        $("#indiv").animate({"margin-top" : "-100%"})
+    });
 });
 
 function hamMenu(x) {

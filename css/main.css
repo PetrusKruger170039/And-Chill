@@ -84,6 +84,7 @@ footer a:visited {
     height: 100px;
     float: left;
     position: fixed;
+    z-index: 15;
     
     /*the background with the gradient*/
     background: black;
