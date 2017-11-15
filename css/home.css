@@ -5,11 +5,31 @@
 }
 
 /* the readmore, watchlist trailer buttons*/
-.readmore {
+.readmore, .readmore-1, .readmore-2, .readmore-3, .readmore-4, .readmore-5 {
     background-color: #558E90;
     min-height: 25px;
 }
 .readmore:hover {
+    background-color: rgba(85,142,144,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.readmore-1:hover {
+    background-color: rgba(85,142,144,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.readmore-2:hover {
+    background-color: rgba(85,142,144,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.readmore-3:hover {
+    background-color: rgba(85,142,144,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.readmore-4:hover {
+    background-color: rgba(85,142,144,0.6);
+    color: rgba(255,255,255,0.6);
+}
+.readmore-5:hover {
     background-color: rgba(85,142,144,0.6);
     color: rgba(255,255,255,0.6);
 }
@@ -130,6 +150,8 @@
 }
 
 /* end of slider */
+
+
 
 .intro{
     margin-bottom: 12vh;

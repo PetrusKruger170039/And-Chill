@@ -9,16 +9,21 @@
         <script src="jquery/jquery-1.11.2/jquery.js"></script>
         <script src="jquery/jquery-ui-1.11.4/jquery-ui.js"></script>
         <link rel="stylesheet" href="jquery/jquery-ui-1.11.4/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
         <!-- bootstrap -->
         <link rel="stylesheet" href="bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="jquery/1.12.0/jquery.min.js"></script>
         <script src="bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
         <!-- library files -->
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/indiv.css">
         <script src="js/home.js"></script>
+        
+        
     </head>
     
     <body>
@@ -42,7 +47,7 @@
                     </div>
                     
                     <div class="col-md-2 visible-md visible-lg">
-                        <h4>SERIES</h4>
+                        <h4>HOME</h4>
                     </div>
                     
                     <div class="logo
@@ -64,8 +69,8 @@
                         <div class="searchicondiv pull-right"><h3><i class="glyphicon glyphicon-search"></i></h3></div>
                     </div>
                 </div>
-                <!-- end of navbar -->
-            
+                
+                <!--slides-->
                 <div class="slider-wrap col-xs-12 visible-sm visible-md visible-lg">
                     <div class="slide-indicator col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
                         <input type="radio" name="slider" class="radiobutton1" id="slider-1" checked>
@@ -84,11 +89,11 @@
                                     visible-lg"></div>
                         <div class="coloured-bar col-xs-12">
                             <div class="text col-xs-12 col-md-4 col-md-offset-6">
-                                <h1>Baby Diver</h1>
-                                <p>Talented getaway driver Baby (Ansel Elgort) relies on the beat of his personal soundtrack to be the best in the game. After meeting the woman (Lily James) of his dreams, he sees a chance to ditch his shady lifestyle and make a clean break. Coerced into working for a crime boss (Kevin Spacey), Baby must face the music as a doomed heist threatens his life, love and freedom.</p>
+                                <h1 id="title"></h1>
+                                <p id="plot"></p>
                                 <button class="button readmore col-xs-6">READMORE</button>
                                 <button class="button watchlist col-xs-6">ADD TO WATCHLIST</button>
-                                <button class="button trailer col-xs-6">WATCH TRAILER</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -152,86 +157,86 @@
                     </div>
                     
                 </div>
-            
-                <div class="intro col-xs-12">
+                <!--Welcome Section-->
+                <div class="intro col945-xs-12">
                     <h2>Welcome</h2>
                     <p>And chill is a place where we put our users first in everything, making sure you can get the best experience, wherever you go.  With the site being scalable you can use it from you cell phone, tablet, or desktop wherever you go.</p>
                     <p>AndChill brings you all the newest movies you'll want to watch.  Getting updated regularly, we can assure you to keep you up to date all the way.  Check out our latest movies on this page.  If you want to enhance your experiment, got check our movies page, and see all we have available for you, at an affordable prize.</p>
                 </div>
-            
+        
                 <div class="suggestions">
                     <div class="title col-xs-12"><h2>LATEST RELEASES</h2></div>
-                    
+                    <!--Second section-->
+                    <!--Blade Runner-->
                     <div id="releases" class="col-xs-12 col-sm-6 col-md-4">
-                        <img class="image" alt="movie" src="img/home/image-placeholder.jpg">
+                        <img class="image" id="img-place" alt="movie">
                         <div class="overlay">
-                            <p class="synopsis">Text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder</p>
+                            <br> <br> <br> <br> <br> <br>
                             <button class="button readmore col-xs-6 col-xs-offset-3">READMORE</button>
                             <button class="button watchlist col-xs-6 col-xs-offset-3">ADD TO WATCHLIST</button>
-                            <button class="button trailer col-xs-6 col-xs-offset-3">WATCH TRAILER</button>
+                            
                         </div>
                     </div>
-                    
+                    <!--American Assassin-->
                     <div id="releases" class="col-xs-12 col-sm-6 col-md-4">
-                        <img class="image" alt="movie" src="img/home/image-placeholder.jpg">
+                        <img class="image" id="img-place-1" alt="movie">
                         <div class="overlay">
-                            <p class="synopsis">Text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder</p>
-                            <button class="button readmore col-xs-6 col-xs-offset-3">READMORE</button>
+                            <br> <br> <br> <br> <br> <br>
+                            <button class="button readmore-1 col-xs-6 col-xs-offset-3">READMORE</button>
                             <button class="button watchlist col-xs-6 col-xs-offset-3">ADD TO WATCHLIST</button>
-                            <button class="button trailer col-xs-6 col-xs-offset-3">WATCH TRAILER</button>
+                            
                         </div>
                     </div>
-                    
+                    <!--GOTG vl.2-->
                     <div id="releases" class="col-xs-12 col-sm-6 col-md-4">
-                        <img class="image" alt="movie" src="img/home/image-placeholder.jpg">
+                        <img class="image" id="img-place-2" alt="movie">
                         <div class="overlay">
-                            <p class="synopsis">Text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder</p>
-                            <button class="button readmore col-xs-6 col-xs-offset-3">READMORE</button>
+                            <br> <br> <br> <br> <br> <br>
+                            <button class="button readmore-2 col-xs-6 col-xs-offset-3">READMORE</button>
                             <button class="button watchlist col-xs-6 col-xs-offset-3">ADD TO WATCHLIST</button>
-                            <button class="button trailer col-xs-6 col-xs-offset-3">WATCH TRAILER</button>
+                            
                         </div>
                     </div>
-                    
+                    <!--kingsman-->
                     <div id="releases" class="col-xs-12 col-sm-6 col-md-4">
-                        <img class="image" alt="movie" src="img/home/image-placeholder.jpg">
+                        <img class="image" id="img-place-3" alt="movie">
                         <div class="overlay">
-                            <p class="synopsis">Text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder</p>
-                            <button class="button readmore col-xs-6 col-xs-offset-3">READMORE</button>
+                            <br> <br> <br> <br> <br> <br>
+                            <button class="button readmore-3 col-xs-6 col-xs-offset-3">READMORE</button>
                             <button class="button watchlist col-xs-6 col-xs-offset-3">ADD TO WATCHLIST</button>
-                            <button class="button trailer col-xs-6 col-xs-offset-3">WATCH TRAILER</button>
+                            
                         </div>
                     </div>
-                    
+                    <!--Lego Ninjago-->
                     <div id="releases" class="col-xs-12 col-sm-6 col-md-4">
-                        <img class="image" alt="movie" src="img/home/image-placeholder.jpg">
+                        <img class="image" id="img-place-4" alt="movie">
                         <div class="overlay">
-                            <p class="synopsis">Text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder</p>
-                            <button class="button readmore col-xs-6 col-xs-offset-3">READMORE</button>
+                            <br> <br> <br> <br> <br> <br>
+                            <button class="button readmore-4 col-xs-6 col-xs-offset-3">READMORE</button>
                             <button class="button watchlist col-xs-6 col-xs-offset-3">ADD TO WATCHLIST</button>
-                            <button class="button trailer col-xs-6 col-xs-offset-3">WATCH TRAILER</button>
+                            
                         </div>
                     </div>
-                    
+                    <!--Girls Trip-->
                     <div id="releases" class="col-xs-12 col-sm-6 col-md-4">
-                        <img class="image" alt="movie" src="img/home/image-placeholder.jpg">
+                        <img class="image" id="img-place-5" alt="movie">
                         <div class="overlay">
-                            <p class="synopsis">Text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder</p>
-                            <button class="button readmore col-xs-6 col-xs-offset-3">READMORE</button>
+                            <br> <br> <br> <br>
+                            <button class="button readmore-5 col-xs-6 col-xs-offset-3">READMORE</button>
                             <button class="button watchlist col-xs-6 col-xs-offset-3">ADD TO WATCHLIST</button>
-                            <button class="button trailer col-xs-6 col-xs-offset-3">WATCH TRAILER</button>
-                        </div>
+                            
                     </div>
 
                 </div>
-                
+                <!--footer-->
             <footer class="col-xs-12">
                 <div class="col-xs-2 col-xs-offset-1 col-md-1"><img src="img/logo_white.png"></div>
                 <div class="col-xs-3 col-md-2 col-md-offset-4"><a href="#">Contact Us</a><a href="#">FAQ</a></div>
                 <div class="col-xs-3 col-md-2"><a href="#">Account information</a><a href="#">Terms of use</a></div>
                 <div class="col-xs-3 col-md-2"><a href="#">Cookie prefferences</a></div>
             </footer>
-            
-            <div id="indiv"><!-- slides in when selecting "readmore" -->
+            <!--Pop up divs info-->
+              <div id="indiv"><!-- slides in when selecting "readmore" -->
                 <div class="close"><h3><i class="glyphicon glyphicon-remove-circle"></i></h3></div>
                 <div class="poster
                             col-sm-4
@@ -240,18 +245,17 @@
                             visible-sm
                             visible-md
                             visible-lg">
-                    <img src="img/home/image-placeholder.jpg">
+                    <img id="img" src="">
                 </div><!--poster-->
 
                 <div class="info
                             col-xs-12
                             col-md-6">
-                        <h1>Title:</h1> <p>Baby Driver</p>
-                        <h1>Year:</h1> <p>2017</p>
-                        <h1>Director:</h1> <p>Edgar Wright</p>
-                        <h1>Starring:</h1> <p>Ansel Elgort, Lily James, Kevin Spacey, Jamie Foxx</p>
-                        <h1>Genre:</h1> <p>Comedy, Action, Crime, Adventure</p>
-                        <h1>Restriction:</h1> <p>PG VL</p>
+                        <h1>Title:</h1> <p id="title"></p>
+                        <h1>Year:</h1> <p id="year"></p>
+                        <h1>Director:</h1> <p id="director"></p>
+                        <h1>Starring:</h1> <p id="cast"></p>
+                        <h1>Genre:</h1> <p id="genre"></p>
 
                     <div class="watchlist-button">
                         <button type="button">Watchlist</button>
@@ -266,24 +270,282 @@
                 <div class="imdb-rating
                             col-xs-8
                             col-xs-offset-1">
-                    <h2>IMDB Rating</h2>
-                    <p>7,8/10</p>
+                    <h2>User Rating</h2>
+                    <p id="user"></p>
                 </div><!--imdb-rating-->
 
                 <div class="description
                             col-xs-8
                             col-xs-offset-2">
-                    <p>Talented getaway driver Baby (Ansel Elgort) relies on the beat of his personal soundtrack to be the best in the game. After meeting the woman of his dreams (Lily James), he sees a chance to ditch his shady lifestyle and make a clean break. After being coerced into working for a crime boss (Kevin Spacey), Baby must face the music as a doomed heist threatens his life, love and freedom.</p>
+                    <p id="plot"></p>
                 </div><!--description-->
 
                 <div id="trailerdiv" class="col-xs-12
                                             col-md-8
                                             col-md-offset-2">
-                    <img src="img/individualpages/babydrivertrailerimage1.jpg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gCcx85zbxz4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div><!--trailer-->
            
-        </div><!--indiv-->
+        </div><!--Blade Runner-->
+            <div id="indiv-1"><!-- slides in when selecting "readmore" -->
+                <div class="close"><h3><i class="glyphicon glyphicon-remove-circle"></i></h3></div>
+                <div class="poster
+                            col-sm-4
+                            col-sm-offset-1
+                            col-md-4
+                            visible-sm
+                            visible-md
+                            visible-lg">
+                    <img id="img-1" src="">
+                </div><!--poster-->
+
+                <div class="info
+                            col-xs-12
+                            col-md-6">
+                        <h1>Title:</h1> <p id="title-1"></p>
+                        <h1>Year:</h1> <p id="year-1"></p>
+                        <h1>Director:</h1> <p id="director-1"></p>
+                        <h1>Starring:</h1> <p id="cast-1"></p>
+                        <h1>Genre:</h1> <p id="genre-1"></p>
+
+                    <div class="watchlist-button">
+                        <button type="button">Watchlist</button>
+                    </div><!--watchlist-button-->
+
+                    <div class="download-button">
+                        <button type="button">Download</button>
+                    </div><!--download-button-->
+
+                </div><!--info-->
+
+                <div class="imdb-rating
+                            col-xs-8
+                            col-xs-offset-1">
+                    <h2>User Rating</h2>
+                    <p id="user-1"></p>
+                </div><!--imdb-rating-->
+
+                <div class="description
+                            col-xs-8
+                            col-xs-offset-2">
+                    <p id="plot-1"></p>
+                </div><!--description-->
+
+                <div id="trailerdiv" class="col-xs-12
+                                            col-md-8
+                                            col-md-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bGnrnGpi8IE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div><!--trailer-->
+           
+        </div><!--American assassin-->
+            <div id="indiv-2"><!-- slides in when selecting "readmore" -->
+                <div class="close"><h3><i class="glyphicon glyphicon-remove-circle"></i></h3></div>
+                <div class="poster
+                            col-sm-4
+                            col-sm-offset-1
+                            col-md-4
+                            visible-sm
+                            visible-md
+                            visible-lg">
+                    <img id="img-2" src="">
+                </div><!--poster-->
+
+                <div class="info
+                            col-xs-12
+                            col-md-6">
+                        <h1>Title:</h1> <p id="title-2"></p>
+                        <h1>Year:</h1> <p id="year-2"></p>
+                        <h1>Director:</h1> <p id="director-2"></p>
+                        <h1>Starring:</h1> <p id="cast-2"></p>
+                        <h1>Genre:</h1> <p id="genre-2"></p>
+
+                    <div class="watchlist-button">
+                        <button type="button">Watchlist</button>
+                    </div><!--watchlist-button-->
+
+                    <div class="download-button">
+                        <button type="button">Download</button>
+                    </div><!--download-button-->
+
+                </div><!--info-->
+
+                <div class="imdb-rating
+                            col-xs-8
+                            col-xs-offset-1">
+                    <h2>User Rating</h2>
+                    <p id="user-2"></p>
+                </div><!--imdb-rating-->
+
+                <div class="description
+                            col-xs-8
+                            col-xs-offset-2">
+                    <p id="plot-2"></p>
+                </div><!--description-->
+
+                <div id="trailerdiv" class="col-xs-12
+                                            col-md-8
+                                            col-md-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dW1BIid8Osg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div><!--trailer-->
+           
+        </div><!--GOTG vol.2-->
+            <div id="indiv-3"><!-- slides in when selecting "readmore" -->
+                <div class="close"><h3><i class="glyphicon glyphicon-remove-circle"></i></h3></div>
+                <div class="poster
+                            col-sm-4
+                            col-sm-offset-1
+                            col-md-4
+                            visible-sm
+                            visible-md
+                            visible-lg">
+                    <img id="img-3" src="">
+                </div><!--poster-->
+
+                <div class="info
+                            col-xs-12
+                            col-md-6">
+                        <h1>Title:</h1> <p id="title-3"></p>
+                        <h1>Year:</h1> <p id="year-3"></p>
+                        <h1>Director:</h1> <p id="director-3"></p>
+                        <h1>Starring:</h1> <p id="cast-3"></p>
+                        <h1>Genre:</h1> <p id="genre-3"></p>
+
+                    <div class="watchlist-button">
+                        <button type="button">Watchlist</button>
+                    </div><!--watchlist-button-->
+
+                    <div class="download-button">
+                        <button type="button">Download</button>
+                    </div><!--download-button-->
+
+                </div><!--info-->
+
+                <div class="imdb-rating
+                            col-xs-8
+                            col-xs-offset-1">
+                    <h2>User Rating</h2>
+                    <p id="user-3"></p>
+                </div><!--imdb-rating-->
+
+                <div class="description
+                            col-xs-8
+                            col-xs-offset-2">
+                    <p id="plot-3"></p>
+                </div><!--description-->
+
+                <div id="trailerdiv" class="col-xs-12
+                                            col-md-8
+                                            col-md-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6Nxc-3WpMbg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div><!--trailer-->
+           
+        </div><!--Kingsman-->
+            <div id="indiv-4"><!-- slides in when selecting "readmore" -->
+                <div class="close"><h3><i class="glyphicon glyphicon-remove-circle"></i></h3></div>
+                <div class="poster
+                            col-sm-4
+                            col-sm-offset-1
+                            col-md-4
+                            visible-sm
+                            visible-md
+                            visible-lg">
+                    <img id="img-4" src="">
+                </div><!--poster-->
+
+                <div class="info
+                            col-xs-12
+                            col-md-6">
+                        <h1>Title:</h1> <p id="title-4"></p>
+                        <h1>Year:</h1> <p id="year-4"></p>
+                        <h1>Director:</h1> <p id="director-4"></p>
+                        <h1>Starring:</h1> <p id="cast-4"></p>
+                        <h1>Genre:</h1> <p id="genre-4"></p>
+
+                    <div class="watchlist-button">
+                        <button type="button">Watchlist</button>
+                    </div><!--watchlist-button-->
+
+                    <div class="download-button">
+                        <button type="button">Download</button>
+                    </div><!--download-button-->
+
+                </div><!--info-->
+
+                <div class="imdb-rating
+                            col-xs-8
+                            col-xs-offset-1">
+                    <h2>User Rating</h2>
+                    <p id="user-4"></p>
+                </div><!--imdb-rating-->
+
+                <div class="description
+                            col-xs-8
+                            col-xs-offset-2">
+                    <p id="plot-4"></p>
+                </div><!--description-->
+
+                <div id="trailerdiv" class="col-xs-12
+                                            col-md-8
+                                            col-md-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F5JV3nVOLMA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div><!--trailer-->
+           
+        </div><!--Ninjago-->
+            <div id="indiv-5"><!-- slides in when selecting "readmore" -->
+                <div class="close"><h3><i class="glyphicon glyphicon-remove-circle"></i></h3></div>
+                <div class="poster
+                            col-sm-4
+                            col-sm-offset-1
+                            col-md-4
+                            visible-sm
+                            visible-md
+                            visible-lg">
+                    <img id="img-5" src="">
+                </div><!--poster-->
+
+                <div class="info
+                            col-xs-12
+                            col-md-6">
+                        <h1>Title:</h1> <p id="title-5"></p>
+                        <h1>Year:</h1> <p id="year-5"></p>
+                        <h1>Director:</h1> <p id="director-5"></p>
+                        <h1>Starring:</h1> <p id="cast-5"></p>
+                        <h1>Genre:</h1> <p id="genre-5"></p>
+
+                    <div class="watchlist-button">
+                        <button type="button">Watchlist</button>
+                    </div><!--watchlist-button-->
+
+                    <div class="download-button">
+                        <button type="button">Download</button>
+                    </div><!--download-button-->
+
+                </div><!--info-->
+
+                <div class="imdb-rating
+                            col-xs-8
+                            col-xs-offset-1">
+                    <h2>User Rating</h2>
+                    <p id="user-5"></p>
+                </div><!--imdb-rating-->
+
+                <div class="description
+                            col-xs-8
+                            col-xs-offset-2">
+                    <p id="plot-5"></p>
+                </div><!--description-->
+
+                <div id="trailerdiv" class="col-xs-12
+                                            col-md-8
+                                            col-md-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7jE61BzKmgQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div><!--trailer-->
+           
+        </div><!--Girls Trip-->
             
+            <!--indiv-->
+            </div>
             </div><!-- main con -->
     </body>
+  <script src="js/array.js"></script>
 </html>

@@ -2,8 +2,98 @@
 	margin: 0 auto;
 	padding: 50px;
 }*/
-
+/*pop up divs*/
 #indiv {
+    /*margin-top: 5%; trying to get this in the end */
+    margin-top: -100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90vh;
+    
+    background-color: rgba(19,19,19,0.9);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #339987;
+    overflow: auto;
+    
+    padding-top: 50px;
+    
+    position: fixed;
+    z-index: 20;
+}
+#indiv-1 {
+    /*margin-top: 5%; trying to get this in the end */
+    margin-top: -100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90vh;
+    
+    background-color: rgba(19,19,19,0.9);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #339987;
+    overflow: auto;
+    
+    padding-top: 50px;
+    
+    position: fixed;
+    z-index: 20;
+}
+#indiv-2 {
+    /*margin-top: 5%; trying to get this in the end */
+    margin-top: -100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90vh;
+    
+    background-color: rgba(19,19,19,0.9);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #339987;
+    overflow: auto;
+    
+    padding-top: 50px;
+    
+    position: fixed;
+    z-index: 20;
+}
+#indiv-3 {
+    /*margin-top: 5%; trying to get this in the end */
+    margin-top: -100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90vh;
+    
+    background-color: rgba(19,19,19,0.9);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #339987;
+    overflow: auto;
+    
+    padding-top: 50px;
+    
+    position: fixed;
+    z-index: 20;
+}
+#indiv-4 {
+    /*margin-top: 5%; trying to get this in the end */
+    margin-top: -100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90vh;
+    
+    background-color: rgba(19,19,19,0.9);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #339987;
+    overflow: auto;
+    
+    padding-top: 50px;
+    
+    position: fixed;
+    z-index: 20;
+}
+#indiv-5 {
     /*margin-top: 5%; trying to get this in the end */
     margin-top: -100%;
     margin-left: 5%;
